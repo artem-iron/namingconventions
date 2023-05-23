@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace thisShouldBePascalCaseNamespace
 {
     internal interface thisShouldBeIPascalCaseInterface
@@ -25,38 +19,20 @@ namespace thisShouldBePascalCaseNamespace
 
         public string thisShouldBePascalCase2
         {
-            get
-            {
-                return "fileName10";
-            }
-            set
-            {
-                thisShouldBeUnderscoreCamelCase2 = value;
-            }
+            get => "fileName10";
+            set => thisShouldBeUnderscoreCamelCase2 = value;
         }
 
         private string thisShouldBeUnderscoreCamelCase3
         {
-            get
-            {
-                return "fileName11";
-            }
-            set
-            {
-                thisShouldBeUnderscoreCamelCase2 = value;
-            }
+            get => "fileName11";
+            set => thisShouldBeUnderscoreCamelCase2 = value;
         }
 
         internal string thisShouldBeUnderscoreCamelCase4
         {
-            get
-            {
-                return "fileName12";
-            }
-            set
-            {
-                thisShouldBeUnderscoreCamelCase2 = value;
-            }
+            get => "fileName12";
+            set => thisShouldBeUnderscoreCamelCase2 = value;
         }
 
         public static string thisShouldbeSUndersocrePascalCase { get; set; } = "fileName13";
@@ -87,7 +63,7 @@ namespace thisShouldBePascalCaseNamespace
         public static void thisShouldBePascalCaseMethod(string ThisShouldBeCamelCase, int ThisShouldBeCamelCaseToo)
         {
             _ = ThisShouldBeCamelCase + ThisShouldBeCamelCaseToo;
-            var ThisShouldBeCamelCase3 = ThisShouldBeCamelCase + ThisShouldBeCamelCaseToo;
+            string ThisShouldBeCamelCase3 = ThisShouldBeCamelCase + ThisShouldBeCamelCaseToo;
             Console.WriteLine(ThisShouldBeCamelCase3);
         }
 
