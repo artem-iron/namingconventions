@@ -10,9 +10,9 @@ namespace thisShouldBePascalCaseNamespace
         public const string thisShouldBeAllCapsWithUndersores = "fileName";
         private const string thisShouldBeAllCapsWithUndersores2 = "fileName2";
         internal const string thisShouldBeAllCapsWithUndersores3 = "fileName3";
-        public static string thisShouldBeSUndersocrePascalCase = "fileName4";
-        private static readonly string thisShouldBeSUndersocreCamelCase = "fileName5";
-        internal static string thisShouldBeSUndersocreCamelCase2 = "fileName6";
+        public static string thisShouldBePascalCase1 = "fileName4";
+        private static readonly string thisShouldBeUnderscoreCamelCase1 = "fileName5";
+        internal static string thisShouldBeUnderscoreCamelCase5 = "fileName6";
         public string thisShouldBePascalCase = "fileName7";
         private readonly string thisShouldBeUnderscoreCamelCase = "fileName8";
         internal string thisShouldBeUnderscoreCamelCase2 = "fileName9";
@@ -35,22 +35,22 @@ namespace thisShouldBePascalCaseNamespace
             set => thisShouldBeUnderscoreCamelCase2 = value;
         }
 
-        public static string thisShouldbeSUndersocrePascalCase { get; set; } = "fileName13";
+        public static string thisShouldbePascalCase { get; set; } = "fileName13";
 
         public thisShouldBePascalCaseClass()
         {
             Console.WriteLine(thisShouldBeAllCapsWithUndersores);
             Console.WriteLine(thisShouldBeAllCapsWithUndersores2);
             Console.WriteLine(thisShouldBeAllCapsWithUndersores3);
-            Console.WriteLine(thisShouldBeSUndersocreCamelCase);
-            Console.WriteLine(thisShouldBeSUndersocreCamelCase2);
+            Console.WriteLine(thisShouldBeUnderscoreCamelCase1);
+            Console.WriteLine(thisShouldBeUnderscoreCamelCase5);
             Console.WriteLine(thisShouldBePascalCase);
             Console.WriteLine(thisShouldBeUnderscoreCamelCase);
             Console.WriteLine(thisShouldBeUnderscoreCamelCase2);
             Console.WriteLine(thisShouldBePascalCase2);
             Console.WriteLine(thisShouldBeUnderscoreCamelCase3);
             Console.WriteLine(thisShouldBeUnderscoreCamelCase4);
-            Console.WriteLine(thisShouldbeSUndersocrePascalCase);
+            Console.WriteLine(thisShouldbePascalCase);
             thisShouldBePascalCaseMethod2();
             _ = thisShouldBePascalCaseAsyncMethod();
         }
